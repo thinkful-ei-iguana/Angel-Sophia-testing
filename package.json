@@ -1,0 +1,22 @@
+{
+  "name": "angel-sophia-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sort.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.2",
+    "nodemon": "^2.0.1"
+  }
+}
