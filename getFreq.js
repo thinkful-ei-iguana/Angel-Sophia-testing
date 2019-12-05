@@ -4,8 +4,9 @@ const app = express();
 
 app.get("/frequency", (req, res) => {
   const { s } = req.query;
-  if (!s) {
-    return res.status(400).send("Invalid request");
+  const numS = Number(s);
+  if (!s || typeof numS !== 'string') {
+    return res.status(400).send("Invalid Request");
   }
 
   const counts = s

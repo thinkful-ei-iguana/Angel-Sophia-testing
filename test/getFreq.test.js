@@ -14,4 +14,11 @@ describe("GET /frequency endpoint", () => {
         expect(res.body).to.have.any.keys("count", "average", "highest", "a", "b",);
       });
   });
+
+  it(`should return 400 if there's no string`, () => {
+    return supertest(frequency)
+        .get('/frequency')
+        .query({ s: 4 })
+        .expect(400, 'Invalid Request');
+});
 });
